@@ -23,6 +23,7 @@ body{
 .welcome{
     color: #316871;
     display: flex;
+    text-align: center;
     justify-content: center;
     margin-top: 15vh;
     margin-bottom: 50px;
@@ -68,6 +69,7 @@ body{
 }
 
 #main2{
+    height: 50px;
     margin-top: 20px;
     font-family: 'Abel';
     font-size: 30px;
@@ -187,4 +189,49 @@ img:hover{
 .restart:hover{
     background-color: #274d55;
     box-shadow: none;
+}
+
+@media only screen and (max-width: 850px){
+    body{
+        overflow-y: scroll;
+    }
+
+    .welcome{
+        margin-top: 50px;
+        font-size: 30px;
+    }
+
+    #main1, #main2, #main3{
+        flex-direction: column;
+    }
+
+    #main2{
+        margin: 20px auto;
+    }
+
+    .fas{
+        font-size: 30px;
+    }
+
+    .name, .points{
+        margin-bottom: 20px;
+    }
+
+    img{
+        width: 70px;
+        height: auto;
+        margin-bottom: -50px;
+    }
+
+    #main3{
+        border-top: 3px solid #2c5a65;
+    }
+
+    .choice{
+        margin: 30px auto;
+    }
+
+    .restart{
+        margin-bottom: 50px;
+    }
 }
